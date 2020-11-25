@@ -1,0 +1,278 @@
+.row {
+  width: 100%;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+/* ----- HEADER -----  */
+
+header {
+  background-color: #f8765e;
+  color: white;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  margin: 10px 0;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li:nth-child(2) {
+  margin: 0 20px;
+}
+
+nav a {
+  color: white;
+}
+
+/* ---- HERO ----- */
+
+.hero {
+  background-color: #f8765e;
+  color: white;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.hero-img-ct {
+  padding: 20px 0;
+}
+
+.hero h2,
+.hero p {
+  margin: 20px 0;
+  line-height: 30px;
+}
+
+.hero h2 {
+  font-size: 25px;
+}
+
+.hero form {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+}
+
+.hero input {
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.hero input::placeholder {
+  color: #cdcdcd;
+}
+
+.hero button {
+  background-color: #9bdbe7;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  width: 168px;
+  height: 60px;
+  margin: 10px auto;
+}
+
+/* --- VALUE PROPOSITION --- */
+
+.value-proposition-ct {
+  background: #ffffff;
+  box-shadow: 0px 10px 34px rgba(210, 210, 210, 0.45);
+  border-radius: 20px;
+  margin: -50px auto 0;
+  padding: 30px 10px;
+}
+
+.value-proposition-card {
+  margin: 20px 0;
+}
+
+.value-proposition-img-ct img {
+  max-width: 180px;
+  max-height: 150px;
+  margin: 10px auto;
+}
+
+.value-proposition-img-ct {
+  display: flex;
+  justify-content: center;
+}
+
+.value-proposition-card h3 {
+  font-weight: bold;
+  border-bottom: 3px solid #f8765e;
+  width: fit-content;
+  padding-bottom: 20px;
+  margin: 20px 0;
+}
+
+.value-proposition-card p {
+  color: #5b6c94;
+  line-height: 32px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* ---- PREMIUM --- */
+
+.premium-img {
+  background-image: url("../images/Phone2@1x.png");
+  height: 360px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 40px auto;
+  width: 100%;
+}
+
+.premium-ct div:not(.premium-img) {
+  display: flex;
+  flex-direction: column;
+}
+
+.premium-ct h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: #f8765e;
+}
+
+.premium-ct h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 45px;
+  text-align: center;
+  color: #031d5b;
+}
+
+.premium-ct p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: #031d5b;
+}
+
+.premium-ct button {
+  width: 178px;
+  height: 60px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  border-radius: 20px;
+  border: none;
+  background-color: #9bdbe7;
+  margin: 10px auto;
+}
+
+/* ---- TESTIMONIALS --- */
+
+.container.testimonials {
+  padding-right: 0;
+}
+
+.testimonials {
+  margin: 20px 0;
+}
+
+.testimonials-title {
+  position: relative;
+  margin-bottom: -40px;
+}
+
+.testimonials-title img {
+  width: 150px;
+}
+
+.testimonials-title h3 {
+  position: absolute;
+  top: 0;
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 45px;
+  color: #f8765e;
+  width: 80%;
+}
+
+.testimonials-cards-ct {
+  background-color: #f8765e;
+  border-radius: 20px 0 0 20px;
+  padding: 20px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+
+.testimonials-card {
+  height: 400px;
+  width: 300px;
+  box-shadow: 12px 12px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-right: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+div .testimonials-card:first-child {
+  background-color: #9bdbe7;
+  color: white;
+}
+
+div .testimonials-card:last-child {
+  background-color: white;
+  max-width: 100px;
+  width: 10%;
+  border-radius: 20px 0 0 20px;
+  margin-right: 0;
+}
+
+div .testimonials-card:last-child p,
+div .testimonials-card:last-child img {
+  display: none;
+}
+
+.testimonials-inner-ct {
+  display: flex;
+  min-width: 100%;
+  justify-content: space-between;
+  margin-left: -40px;
+  padding-left: 10px;
+}
