@@ -14,6 +14,9 @@
   --fs-s: 12px;
   --main-font: "Roboto";
 }
+html {
+  overflow-x: hidden;
+}
 
 body {
   font-family: var(--main-font);
@@ -65,6 +68,14 @@ nav ul a {
   color: var(--white-color);
   font-weight: bold;
   font-size: var(--fs-m);
+}
+
+@media (min-width: 1020px) {
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 /* HERO */
@@ -128,6 +139,13 @@ nav ul a {
   background-color: var(--cta-color);
   text-align: center;
   color: var(--white-color);
+}
+
+@media (min-width: 769px) {
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 /* VALUE PROPOSITION */
@@ -225,4 +243,162 @@ nav ul a {
   background-color: var(--cta-color);
   text-align: center;
   color: var(--white-color);
+}
+
+/* TESTIMONIALS */
+
+.testimonials-main-quote-ct {
+  position: relative;
+  margin-bottom: -40px;
+}
+
+.testimonials-main-quote-ct img {
+  height: 165px;
+  width: 135px;
+}
+
+.testimonials-main-quote-ct h3 {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  color: var(--main-color);
+  font-size: var(--fs-l);
+  width: 175px;
+  line-height: var(--xl-space);
+  font-weight: bold;
+}
+
+.testimonials-card-ct {
+  display: flex;
+  overflow-x: scroll;
+  margin: 0px -29px;
+  background-image: url("../images/CustomersBackground\ \(1\).png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 580px;
+  align-items: center;
+}
+
+.testimonials-card {
+  padding: 30px 20px;
+  border-radius: var(--m-space);
+  box-shadow: 12px 12px 40px 0px rgba(0, 0, 0, 0.25);
+  height: 400px;
+  min-width: 270px;
+  font-weight: bold;
+  font-size: var(--fs-m);
+  margin: 10px 20px;
+}
+
+.testimonials-card:first-child {
+  background-color: var(--cta-color);
+  color: var(--white-color);
+}
+
+.testimonials-card:not(:first-child) {
+  background-color: var(--white-color);
+}
+
+.testimonials-card p:first-of-type {
+  margin-top: 100px;
+}
+
+.testimonials-card p:first-of-type + p {
+  margin-top: 150px;
+}
+
+/* CONTACT */
+
+.contact-ct {
+  margin: var(--m-space) 0px;
+}
+
+.contact-ct h2 {
+  font-size: var(--fs-xl);
+  color: var(--main-color);
+  text-align: center;
+  padding: var(--s-space);
+  margin: var(--s-space) 0px;
+  line-height: var(--xl-space);
+  font-weight: bold;
+}
+
+.contact-ct p {
+  color: var(--gray-color);
+  text-align: center;
+  margin: var(--s-space) 0px;
+  font-size: var(--fs-l);
+  font-weight: bold;
+}
+
+.contact-ct form {
+  display: flex;
+  flex-direction: column;
+  padding: var(--l-space) 0px;
+}
+
+.contact-ct input,
+.contact-ct button {
+  border: none;
+  padding: var(--m-space);
+  font-size: var(--fs-m);
+  border-radius: var(--m-space);
+}
+
+.contact-ct input {
+  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.3);
+  margin: var(--m-space) 0px;
+}
+
+.contact-ct input::placeholder {
+  color: var(--gray-color);
+}
+
+.contact-ct button {
+  background-color: var(--cta-color);
+  text-align: center;
+  color: var(--white-color);
+}
+
+/* FOOTER  */
+
+.footer {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--m-space);
+}
+
+.footer ul {
+  display: flex;
+  margin-top: var(--m-space);
+}
+
+.footer ul a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.footer li:nth-child(2) a {
+  margin: 0 var(--l-space);
+}
+
+.footer li:nth-child(2) a::before {
+  content: "/";
+  height: 10px;
+  width: 2px;
+  color: var(--white-color);
+  margin-right: 10px;
+}
+
+.footer li:nth-child(2) a::after {
+  content: "/";
+  height: 10px;
+  width: 2px;
+  color: var(--white-color);
+  margin-right: 10px;
 }
